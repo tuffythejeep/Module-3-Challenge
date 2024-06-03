@@ -1,22 +1,22 @@
-# Module 2 - Challenge
+# Employee-Payroll-Tracker-by-Alex
 
 ## Description
 
-This repository contains my solution for the Module 2 Challenge.
+This repository contains my solution for the Module 3 Challenge - Employee Payroll.
 
-In order for my webpage to show what I can do, I used HTML and CSS to:
+In order for work to show what I can do, I used JavaScript to:
 
-- Showcase usable links which scroll the UI to the corresponding sections
-- I added alt attributes to my images
-    - And, I made my first image clickable, which launches my Module 1 - Challenge webpage, my first deployed  project
-- I used display flex and media screen, but they are not working for me 100%
+- Added a function which allows a user to add multiple employees to display on the page.
+- Added a function which takes in the generated array of employees and logs the average salary and number of employees to the console.
+- Added a function which takes in the generated array of employees, randomly selects one employee, and uses a template literal to log their full name to the console.
+
 
 You can find my deployed page here:
 
-- <https://tuffythejeep.github.io/Module-2-Challenge/>
+- <https://tuffythejeep.github.io/Employee-Payroll-Tracker-by-Alex/>
 
 and my repository page here:
-- <https://github.com/tuffythejeep/Module-2-Challenge>
+- <https://github.com/tuffythejeep/Employee-Payroll-Tracker-by-Alex>
 
 Here is a picture of my deployed page:
 
@@ -34,12 +34,11 @@ I used Chrome console (inspect) to ensure my edits, adjustments, changes, and tw
 
 ## Credits
 
-Credit to Jasper Garcia, my son, who helped me troubleshoot when I was stuck - however, I wrote all my own HTLM and CSS. I was able to ask him questions to clarify, and he promted and challenged me to take breaks and allow my mind to process the solutions which were brewing.
+Credit to Jasper Garcia, my son, who helps me troubleshoot when I am stuck - however, I wrote all my own JavaScript. I was able to ask him questions to clarify, and he promted and challenged me to take breaks and allow my mind to process the solutions which were brewing.
 
 When stuck, I referenced the following sites:
 
-- For FREE Images I used in this REPO: <https://www.pexels.com/search/surf/>
-- For learning how to properly link and hyperlink items within my HTML: <https://www.w3schools.com/html/html_links.asp>
+- <https://developer.mozilla.org/en-US/>
 
 I referenced code (HTML and CSS) from the UT provided lessons, however, I wrote all my own changes, edits, tweaks, and versions of my webpage, html, and css.
 
