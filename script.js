@@ -11,7 +11,6 @@ while (true) {
     }
     // the above will capture the employee's first name
   
-
   const lastName = prompt("Enter the employee's last name:");
   // the above will capture the employee's last name
 
