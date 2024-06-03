@@ -22,12 +22,12 @@ while (true) {
   const employee = {
     firstName,
     lastName,
-    salaryInput,
+    salary,
   };
 
-    employees.push(employee);
+    collectEmployees.push(employee);
 
-  return employees;
+  return employee;
 };
 
 // Display the average salary
@@ -109,3 +109,4 @@ const trackEmployeeData = function () {
 
 // Add event listener to 'Add Employees' button
 addEmployeesBtn.addEventListener("click", trackEmployeeData);
+}
