@@ -8,17 +8,26 @@ while (true) {
   const firstName = prompt("Enter the employee's first name (or type 'stop' to finish):");
   if (firstName.toLowerCase() === "stop") {
     break;
+    }
     // the above will capture the employee's first name
-  }
+  
 
   const lastName = prompt("Enter the employee's last name:");
-  // the above will capture the employee's first name
+  // the above will capture the employee's last name
 
   const salaryInput = prompt("Enter the employee's salary (numeric value please):");
+  const salary = isNaN(parseFloat(salaryInput)) ? 0 : parseFloat(salaryInput);
+  // the above will capture the employee's salary
 
-  salary = isNaN(salary) ? 0 : parseFloat(salary);
+  const employee = {
+    firstName,
+    lastName,
+    salaryInput,
+  };
 
-  const employee =
+    employees.push(employee);
+
+  return employees;
 };
 
 // Display the average salary
