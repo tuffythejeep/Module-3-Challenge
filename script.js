@@ -16,7 +16,7 @@ const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
   const randInt = Math.random() * employeesArray.length;
   console.log(
-    `Congrats to ${employeesArray[randInt].firstName} ${employeesArray[randInt].lastName}`
+    `Congrats to ${employeesArray[randInt].firstName} ${employeesArray[randInt].lastName} for being selected as the random winner`
   );
 };
 
