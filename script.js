@@ -28,7 +28,6 @@ while (true) {
 
     employees.push(employee);
   }
-
   return employee;
 };
 
