@@ -20,7 +20,8 @@ and my repository page here:
 
 Here is a picture of my deployed page:
 
-![image](https://github.com/tuffythejeep/Module-2-Challenge/assets/167649421/7747266d-62c0-4da8-8b0c-99e7a8638048)
+![image](https://github.com/tuffythejeep/Employee-Payroll-Tracker-by-Alex/assets/167649421/38c01158-cdfc-4ff6-80b5-125806dce0c4)
+
 
 ## Installation
 
