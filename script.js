@@ -6,67 +6,50 @@ const employees = []
 /* Collect employee data */
 const collectEmployees = function () {
   /* TODO: Get user input to create and return an array of employee objects */
-  while (true) {
-    const firstName = prompt(
-      "Enter the employee's first name (or type 'stop' to finish):"
-    );
-    if (firstName.toLowerCase() === "stop") {
-      break;
-    }
-    /* the above will capture the employee's first name */
-
-    const lastName = prompt("Enter the employee's last name:");
-    /* the above will capture the employee's last name */
-
-    const salaryInput = prompt(
-      "Enter the employee's salary (numeric value please):"
-    );
-    const salary = isNaN(parseFloat(salaryInput)) ? 0 : parseFloat(salaryInput);
-    /* the above will capture the employee's salary */
-
-    const employee = {
-      firstName,
-      lastName,
-      salary,
+  
+    const firstName=prompt("Enter the employee's first name (or type 'stop' to finish):");
+    const lastName=prompt("Enter the employee's last name:");
+    const salary=prompt("Enter the employee's salary (numeric value please):");
+    
+    const newEmployee = {
+      firstName:firstName,
+      lastName:lastName,
+      salary:salary,
     };
+    employees.push(newEmployee);
 
-    employees.push(employee);
+    if (confirm("Do you want to add anyone else")){
+      collectEmployees()
   }
   return employees;
-};
-
-const allEmployees = collectEmployees ();
-console.log(allEmployees);
+}
 
 
 
 /* Display the average salary */
-const displayAverageSalary = function (employeesArray) {
+const displayAverageSalary = function(employees) {
   /* TODO: here I am a calculating the total salary */
   let totalSalary = 0;
-  employeesArray.forEach(function (employee) {
-    totalSalary += employee.salary;
-  });
+
+  for (let index = 0; index < employees.length; index++) {
+      totalSalary = totalSalary + parseInt(employees[index].salary)
+  }
 
   /* here i am calculating the average salary */
-  const averageSalary = totalSalary / employeesArray.length;
+  const averageSalary = totalSalary / employees.length;
 
   /* now I will console.log the result */
-  console.log(`Average salary: $${averageSalary.toFixed(2)}`);
-
-  displayAverageSalary(employees);
-
+  console.log(`Average salary: $${averageSalary.toFixed(2)} for ${employees.length} employees`)
+  }
 
 
-  
+
   /* Select a random employee */
-  const getRandomEmployee = function (employeesArray) {
+  const getRandomEmployee = function (employees) {
     /* TODO: Select and display a random employee */
-    const randInt = Math.random() * employeesArray.length;
-    console.log(
-      `Congrats to ${employeesArray[randInt].firstName} ${employeesArray[randInt].lastName} for being selected as the random winner`
-    );
-  };
+    const randomEmployee = employees[Math.floor(Math.random() * employees.length)];
+    console.log(`Congrats to: ${randomEmployee.firstName} ${randomEmployee.lastName} for being selected as the random winner`);
+  }
 
 /*
   ====================
@@ -133,4 +116,3 @@ const trackEmployeeData = function() {
 
 // Add event listener to 'Add Employees' button
 addEmployeesBtn.addEventListener('click', trackEmployeeData);
-}
