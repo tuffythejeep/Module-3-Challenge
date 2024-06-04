@@ -28,7 +28,7 @@ while (true) {
 
     employees.push(employee);
   }
-  return employee;
+  return employees;
 };
 
 const allEmployees = collectEmployees ();
