@@ -7,7 +7,7 @@ const employees = []
 const collectEmployees = function () {
   /* TODO: Get user input to create and return an array of employee objects */
   
-    const firstName=prompt("Enter the employee's first name (or type 'stop' to finish):");
+    const firstName=prompt("Enter the employee's first name (Or hit 'cancel' when done entering NEW names):");
     const lastName=prompt("Enter the employee's last name:");
     const salary=prompt("Enter the employee's salary (numeric value please):");
     
