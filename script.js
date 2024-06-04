@@ -18,13 +18,11 @@ const collectEmployees = function () {
     };
     employees.push(newEmployee);
 
-    if (confirm("Do you want to add anyone else")){
+    if (confirm("Do you want to add any other employees?")){
       collectEmployees()
   }
   return employees;
 }
-
-
 
 /* Display the average salary */
 const displayAverageSalary = function(employees) {
@@ -41,8 +39,6 @@ const displayAverageSalary = function(employees) {
   /* now I will console.log the result */
   console.log(`Average salary: $${averageSalary.toFixed(2)} for ${employees.length} employees`)
   }
-
-
 
   /* Select a random employee */
   const getRandomEmployee = function (employees) {
