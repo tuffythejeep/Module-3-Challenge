@@ -7,7 +7,7 @@ const employees = []
 const collectEmployees = function () {
   /* TODO: Get user input to create and return an array of employee objects */
   
-    const firstName=prompt("Enter the employee's first name (Or hit 'cancel' when done entering NEW names):");
+    const firstName=prompt("Enter the employee's first name:");
     const lastName=prompt("Enter the employee's last name:");
     const salary=prompt("Enter the employee's salary (numeric value please):");
     
@@ -18,7 +18,7 @@ const collectEmployees = function () {
     };
     employees.push(newEmployee);
 
-    if (confirm("Do you want to add any other employees?")){
+    if (confirm("Add another employee? Or hit Cancel.")){
       collectEmployees()
   }
   return employees;
