@@ -37,9 +37,15 @@ I used Chrome console (inspect) to ensure my edits, adjustments, changes, and tw
 
 Credit to Jasper Garcia, my son, who helps me troubleshoot when I am stuck - however, I wrote all my own JavaScript. I was able to ask him questions to clarify, and he promted and challenged me to take breaks and allow my mind to process the solutions which were brewing.
 
+Thanks to Travis Haynie for assistance when I was stuck and his encouragement!
+
 When stuck, I referenced the following sites:
 
 - <https://developer.mozilla.org/en-US/>
+- <https://stackoverflow.com/>
+- <https://google.com/>
+- <https://bing.com/>
+
 
 I referenced code (HTML and CSS) from the UT provided lessons, however, I wrote all my own changes, edits, tweaks, and versions of my webpage, html, and css.
 
